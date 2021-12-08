@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body{
+    background-color:#1D232A;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #fff;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15191c;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.cabecalho_menu{
+    cursor: pointer;
+}
+
+.cabecalho_menu i::before{
+    content: "\e904";
+}
+
+.cabecalho_notificacao i::before{
+    content: "\e906";
+}
+
+.cabecalho_logo{
+    width: 40px;
+}
+
+.menu-lateral{
+    display: none;
+    flex-direction: column;
+    align-self:center;
+    background-color: #15191c;
+    width: 75vw;
+    height: 100vh;
+    transition: .30s;
+}
+
+.menu-lateral-ativo{
+    display: flex;
+    transition: .30s;
+}
+
+.menu-lateral-logo {
+    align-self: center;
+    width: 118px;
+    padding: 16px;
+}
+
+.menu-lateral-link{
+    height: 63px;
+    color:#95999c;
+    padding-left: 64px;
+    display: flex;
+}
+
+.menu-lateral-link-ativo{
+    color: #fff;
+    padding-left: 56px;
+    border-left: 8px solid #fff;
+}
+
+.menu-lateral-link::before{
+    width: 24px;
+    height: 24px;
+    font-size:24px;
+    position: absolute;
+    left: 24px
+}   
+
+.menu-lateral-link-inicio::before{
+    content: "\e902";
+}
+
+.menu-lateral-link-videos::before{
+    content: "\e90e";
+}
+
+.menu-lateral-link-picos::before{
+    content:"\e909";
+}
+
+.menu-lateral-link-integrantes::before{
+    content:"\e903";
+}
+
+.menu-lateral-link-camisas::before{
+    content:"\e900";
+}
+
+.menu-lateral-link-pinturas::before{
+    content:"\e90a";
+}
